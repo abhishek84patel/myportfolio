@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+  background-color: #dad4db;
+}
+h3{
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+h2 span{
+  color: rgb(238, 70, 70);
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.nav-content {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: capitalize;
+}
+.nav-content .right-side ul {
+  display: flex;
+}
+.nav-content .right-side ul > li {
+  list-style: none;
+}
+.nav-content .right-side > ul > li > a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 0px 12px;
+  cursor: pointer;
+}
+.nav-content .right-side > ul > li > a:hover {
+  color: rgb(201, 62, 62);
+  text-decoration: underline;
+  transition: 0.2s ease-in;
+}
+ button {
+  font-size: 1.2rem;
+  padding: 5px 12px;
+  border-radius: 40px;
+  box-shadow: -1px 4px 5px 1px rgb(5 5 5 / 70%);
+  border: none;
+  font-weight: lighter;
+  width: fit-content;
+  text-transform: capitalize;
+  background-color: rgb(240, 65, 65);
+  color: white;
+  cursor: pointer;
+}
+ button:hover {
+  background-color: rgb(140, 74, 167);
+  transition: all 0.5s ease-in-out;
+}
+/* main content start in styles */
+.home-content {
+height: 100vh;
+  max-width: 500px;
+  margin: 0 auto;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.home-content >h2 {
+  font-size: 2rem;
+}
+.home-content > p,
+h4 {
+  margin-top: 15px;
+}
+.home-content > p:nth-child(1) {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.home-content > p:nth-child(4){
+  margin-bottom: 15px;
+  font-weight: 500;
+
+}
+/* .home-content >button{
+ width: 8rem;
+ margin-top: 15px;
+ text-transform: capitalize;
+ border: none;
+ border-radius: 3px;
+ background-color: rgb(245, 83, 83);
+ color: white;
+ cursor: pointer;
+ font-size: 1.2rem;
+} */
+.about{
+  height: 70vh;
+  
+}
+.about-contant{
+  display: flex;
+  justify-content: center;
+
+}
+.about h2{
+   font-size: 2rem;
+   text-align: center;
+   text-transform: capitalize;
+}
+.about h4{
+  /* font-size: 2rem; */
+  text-align: center;
+  text-transform: capitalize;
+}
+.about-contant p{
+  max-width:500px ;
+}
+img{
+  max-width: 300px;
+  width: 100%;
+}
+.image{
+  text-align: center;
+}
+.material-symbols-outlined{
+ opacity: 0;
+}
+@media screen and (max-width:768px){
+  .nav-content .right-side, .nav-content button{display: none;}
+  .material-symbols-outlined{opacity: 1;}
+}
