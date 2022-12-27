@@ -1,5 +1,5 @@
 .skill{
-    height: 70vh;
+    min-height: 70vh;
 }
 .skill-bar {
     max-width: 500px;
